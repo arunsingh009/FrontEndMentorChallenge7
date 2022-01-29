@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/arunsingh009/FrontEndMentorChallenge7)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [click me](https://github.com/arunsingh009/FrontEndMentorChallenge7)
+- Live Site URL: [click me](https://arunsingh009.github.io/FrontEndMentorChallenge7/)
 
 ## My process
 
