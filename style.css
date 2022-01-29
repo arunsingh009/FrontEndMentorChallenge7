@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+main::before{
+    content:"";
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    z-index: -1;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    display:flex ;
+
+}
+.box1{
+    width: 50%;
+    height: 100vh;
+    /* border: 1px solid white; */
+}
+.logo{
+    height: 15vh;
+    width: 100%;
+}
+.loimg{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loimg img{
+    width: 200px ;
+    height: auto;
+}
+.pageImgd{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pageImgd img{
+    width: 80%;
+    height: auto;
+}
+.pageImgm{
+    display: none;
+}
+
+.box2{
+    width: 50%;
+    height: 100vh;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content{
+    width:80%;
+    height: 60vh;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+.head{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.head h1{
+    font-size: 2.8em;
+    color:white;
+}
+.para p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+.btn{
+    width: 100%;
+
+}
+.btn button{
+    width: 200px;
+    height: 50px;
+    border:none;
+    border-radius:30px ;
+    font-size: 20px;
+    color:hsl(257, 40%, 49%) ;
+    cursor: pointer;
+    margin-left: 15px;
+    box-shadow:1px 4px 0px 2px hsl(258deg 32% 28% / 70%);
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    background-color:hsl(300, 69%, 71%);
+    color: white;
+}
+.icons{
+    width: 20%;
+    height: 10vh;
+    /* border: 2px solid white; */
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+}
+.icons ul{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    margin: auto;
+    list-style: none; 
+}
+.icons ul li{
+    font-size: 34px;
+    cursor: pointer;
+    color:white;
+
+}
+.icons ul li:hover{
+    color: hsl(300, 69%, 71%);
+}
+@media(max-width:1150px){
+
+    main{
+        width: 100%;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin: auto;
+        background-color:hsl(257, 40%, 49%);
+    }
+    .box1{
+        width: 100%;
+        height: fit-content;
+    }
+    .loimg{
+        width: 60%;
+        height: 10vh;
+        z-index: 1;
+    }
+    .loimg img{
+        width: 140px;
+        height: auto;
+    }
+    .content{
+        width: 70%;
+        height: 44vh;
+        z-index: 1;
+    }
+    .head h1{
+        font-size: 2.1em;
+    }
+    .pageImgd{
+        height: fit-content;
+    }.pageImgd img{
+        z-index: 1;
+        width: 70%;
+        height: auto;
+    }
+    
+    .box2{
+        width: 100%;
+        height: fit-content;
+        z-index: 1;
+    }
+    .icons{
+        position: unset;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    main::before{
+        width: 100%;
+       background: url(./images/bg-mobile.svg);
+       background-repeat: no-repeat; 
+       z-index: 1;
+       height: 100vh;
+       background-position-x:center;
+       background-position-y: 10px;
+    }
+}
+@media(max-width:600px){
+    main{
+        height: 120vh;
+    }
+    .content{
+        padding: 10px 0px;
+        height: 45vh;
+    }
+    .head{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .head h1{
+        font-size: 1.8em;
+    }
+    .para p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .content{
+        width: 85%;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+}
